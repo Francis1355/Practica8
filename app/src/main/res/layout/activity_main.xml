@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.francisco.practica8.MainActivity">
+
+    <TextView
+        android:id="@+id/tvDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text.tittle" />
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="64dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text.btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtMetros" />
+    <TextView
+        android:id="@+id/tvpul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"/>
+    <TextView
+        android:id="@+id/tvyar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpul"/>
+    <TextView
+        android:id="@+id/tvmts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvyar"/>
+    <TextView
+        android:id="@+id/tvmilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmts"/>
+
+    <EditText
+        android:id="@+id/edtPies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text.hint"
+        android:ems="10"
+
+        android:layout_alignBottom="@+id/separador"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtMetros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text.hintM"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/edtPies"
+        android:layout_alignBottom="@+id/edtPies"
+        android:layout_toRightOf="@+id/edtPies"
+        android:layout_toEndOf="@+id/edtPies" />
+</RelativeLayout>

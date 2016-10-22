@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practica8</string>
+    <string name="text.tittle">Proporciona las medidas para realizar la suma de las cantidades</string>
+    <string name="text.hint">Pies</string>
+    <string name="text.hintM">Metros</string>
+    <string name="text.btn">Convertir</string>
+</resources>
